@@ -1,0 +1,240 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://artgallery.yale.edu/sites/default/files/styles/hero_small/public/2023-01/ag-doc-2281-0036-pub.jpg?h=147a4df9&itok=uclO7OrF");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a, button {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        nav a:hover, button:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .slideshow-container {
+            max-width: 500px;
+            max-height:16rem;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+            
+            width: 100%; 
+        }
+
+        img {
+            vertical-align: middle;
+            width: 100%;
+            max-height: 15rem;
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px;
+            }
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vivid Frame Art Gallery</h1>
+        <hr>
+        <h5 style="font-size: 1.2rem; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Acquire original art from our online art gallery.<br>
+            Take a look at our vast collection of artwork created by artists from across the world.</h5>
+    </header>
+
+    <nav>
+        <a href="photography.html">Photography</a>
+        <a href="paintings.html">Paintings</a>
+        <a href="sketches.html">Sketches</a>
+        <a href="Architecture.html">Architecture</a>
+        <a href="Sculptures.html">Sculptures</a>
+    </nav>
+<br>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/perspective-photography-featured-landscape-53ad48fccf3b6a2ea075c5f98502d16f-zybravgx2q47.jpg" alt="Nature">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="https://webneel.com/daily/sites/default/files/images/daily/10-2013/10-nature-photography-sky-helminadia-ranford.jpg" alt="Snow">
+            
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHx6MN-j_LdgIRQvwYwPcG1j6yQvJ2ENDVZg&usqp=CAU" alt="Mountains">
+
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4/ 5</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcco9D4cYdHPcJL6r9BEfKI17_UnTs8UJy7A&usqp=CAU" alt="Mountains">
+
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="https://media.proprofs.com/images/QM/user_images/1826446/1629443104.jpg" alt="Mountains">
+
+        </div>
+    </div>
+
+    <br>
+
+   
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+    <footer>
+        <nav>
+            <a href="index.html"> Home</a>
+            <a href="Aboutus.html"> About us</a>
+            <a href="Contactus.html"> Contact us</a>
+        </nav>
+        &copy; 2024 Art Gallery. All rights reserved.
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); 
+        }
+    </script>
+
+</body>
+</html>
